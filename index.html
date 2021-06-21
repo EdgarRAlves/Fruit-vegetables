@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Fruit and Vegetables Encyclopedia</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid bg-dark">
+    <div class="container pt-5">
+      <h2 class="text-center text-white pt-4">Fruit and Vegetables Encyclopedia</h2>
+      <div class="text-white text-center pb-2 fs-2">
+        <i class="fas fa-apple-alt me-2"></i>
+        <i class="fas fa-carrot"></i>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-5 mb-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter products
+                </a>
+                <select id="select" class="form-control">
+                  <option value="0" selected disabled>--Choose--</option>
+                  <option value="fruits">Fruits</option>
+                  <option value="vegetables">Vegetables</option>
+                </select>
+
+                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                  <li><a class="dropdown-item" href="#">Fruit</a></li>
+                </ul> -->
+              </li>
+            </ul>
+            <form name="input" class="d-flex">
+              <input name="input2" id="search" class="form-control me-2" type="search"
+                placeholder="Search for fruits/vegetables" aria-label="Search">
+              <button id="btn" class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div id="apricot" class="card fruits">
+            <img src="IMG/apricot.jpg" class="card-img-top" alt="Apricot">
+            <div class="card-body">
+              <h5 class="card-title">Apricot</h5>
+              <p class="card-text"><b>Presence in Ethnic Cuisines:</b> Asian / Chinese, Japanese, Korean / South East
+                Asia
+                (Vietnam, Cambodia, Laos) / African / Cuban, Puerto Rican / Latino / Pacific Islands</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> <b> Nutrient Content Claims:</b> Low in fat, Saturated fat free, Cholesterol
+                free, Sodium free, Good source of fiber, Good source of vitamin A, Good source of vitamin C, Good source
+                of copperApricots are a good source of vitamins A & C.</li>
+              <li class="list-group-item"><b>Average weight:</b> 25g</li>
+              <li class="list-group-item"> <b>Health Claims:</b> Apricots, as part of a low sodium diet, may reduce the
+                risk of high blood pressure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div id="grapes" class="card fruits">
+            <img src="IMG/grapes.jpg" class="card-img-top" alt="Grapes">
+            <div class="card-body">
+              <h5 class="card-title">Grapes</h5>
+              <p class="card-text"><b>Presence in Ethnic Cuisines:</b> Asian / Chinese, Japanese, Korean / South East
+                Asia
+                (Vietnam, Cambodia, Laos) / Mediterranean </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> <b> Nutrient Content Claims:</b>Fat free, Saturated fat free, Cholesterol
+                free, Very low in sodium </li>
+              <li class="list-group-item"><b>Average weight:</b> 2-3g</li>
+              <li class="list-group-item"> <b>Health Claims:</b> Development of cancer depends on many factors. A diet
+                low in total fat may reduce the risk of some cancers. Grapes are fat free.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div id="orange" class="card fruits">
+            <img src="IMG/orange.jpg" class="card-img-top" alt="orange">
+            <div class="card-body">
+              <h5 class="card-title">Orange</h5>
+              <p class="card-text"><b>Presence in Ethnic Cuisines:</b> Asian / Chinese, Japanese, Korean / South East
+                Asia (Vietnam, Cambodia, Laos) / African / Cuban, Puerto Rican / Latino / Mexican / Mediterranean /
+                Southern </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> <b> Nutrient Content Claims:</b>Fat free, Saturated fat free, Cholesterol
+                free, Sodium free, Good source of fiber, High in vitamin C </li>
+              <li class="list-group-item"><b>Average weight:</b> 100-120 g</li>
+              <li class="list-group-item"> <b>Health Claims:</b> Oranges, as part of a low sodium diet, may reduce the
+                risk of high blood pressure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div id="watermelon" class="card fruits">
+            <img src="IMG/watermelon.jpg" class="card-img-top" alt="watermelon">
+            <div class="card-body">
+              <h5 class="card-title">Watermelon</h5>
+              <p class="card-text"><b>Presence in Ethnic Cuisines:</b> South East Asia (Vietnam, Cambodia, Laos) /
+                African / Southern / Mediterranean / Latin </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> <b> Nutrient Content Claims:</b>Fat free, Saturated fat free, Cholesterol
+                free, Sodium free, Good source of vitamin C </li>
+              <li class="list-group-item"><b>Average weight:</b> 5-7 Kg</li>
+              <li class="list-group-item"> <b>Health Claims:</b> Watermelon is rich in an amino acid called citrulline
+                that may help move blood through your body and can lower your blood pressure. Your heart also enjoys the
+                perks of all the lycopene watermelon contains. Studies show that it may lower your risk of heart
+                attacks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="card vegetables" id="broccoli">
+            <img src="IMG/brokolis.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Broccoli</h5>
+              <p class="card-text"><b> Presence in Ethnic Cuisines:</b> Asian / Chinese, Japanese, Korean / South East
+                Asia (Vietnam, Cambodia, Laos) / African / Latino / Mediterranean </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b> Nutrient Content Claims:</b> Low in fat, Saturated fat free, Cholesterol
+                free, Low in sodium, Good source of fiber, Good source of potassium, High in vitamin C</li>
+              <li class="list-group-item"> <b>Average weight:</b> 225 g</li>
+              <li class="list-group-item"> <b>Health Claims: </b> Dietary Fat & Cancer: Development of cancer depends on
+                many factors. A diet low in total fat may reduce the risk of some cancers. Broccoli is low in fat.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card vegetables" id="potato">
+            <img src="IMG/bulvytes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Potato</h5>
+              <p class="card-text"><b> Presence in Ethnic Cuisines:</b> Chinese, Japanese, Korean / African / Latino /
+                Mexican / Mediterranean / Cajun, Creole </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b> Nutrient Content Claims:</b> Excellent source of vitamin C, Good source of
+                potassium, Sodium and Cholesterol free, Good source of vitamin B6, Fat-free </li>
+              <li class="list-group-item"> <b>Average weight:</b> 140 – 280 g</li>
+              <li class="list-group-item"> <b>Health Claims: </b> Diets low in sodium may reduce the risk of high blood
+                pressure, a disease associated with many factors. Potatoes are sodium free. </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card vegetables" id="carrots">
+            <img src="IMG/morkytes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Carrots</h5>
+              <p class="card-text"><b> Presence in Ethnic Cuisines:</b> Mediterranean /Chinese, Japanese, Korean /
+                Latino / Mexican / European </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b> Nutrient Content Claims:</b> Fat free, Saturated fat free, Cholesterol
+                free, Low in sodium, Low-calorie, High in vitamin A </li>
+              <li class="list-group-item"> <b>Average weight:</b> 50 – 180 g</li>
+              <li class="list-group-item"> <b>Health Claims: </b> Dietary Fat & Cancer: Development of cancer depends on
+                many factors. A diet low in total fat may reduce the risk of some cancers. Carrots are fat free.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card vegetables" id="tomato">
+            <img src="IMG/tomato.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tomato</h5>
+              <p class="card-text"><b> Presence in Ethnic Cuisines:</b> African / Cuban, Puerto Rican / Latino /
+                Mediterranean </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b> Nutrient Content Claims:</b> Fat free, Saturated fat free, Cholesterol
+                free, Very low in sodium, Low in calories, High in vitamin C </li>
+              <li class="list-group-item"> <b>Average weight:</b> 120-140 g</li>
+              <li class="list-group-item"> <b>Health Claims: </b> Dietary Saturated Fat & Cholesterol & Risk of Coronary
+                Heart Disease: While many factors affect heart disease, diets low in saturated fat and cholesterol may
+                reduce the risk of this disease. Tomatoes contains no saturated fat or cholesterol.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-secondary">
+    <div class="container text-center py-2">
+      <p>&copy; Copyright, 2021</p>
+      <p>Made by Agnė Sabalinkaitė, Edgar Rocha Alves, Greta Lebedinskaitė, Tumas Radzevičius</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
